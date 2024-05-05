@@ -5,53 +5,53 @@ function openProductPopup(productId) {
     // Set product name and description based on the product ID
     switch (productId) {
         case "product1":
-            productName = "Vintage Artisan Wooden Bowl";
-            productDescription = "Still Updating😊😊";
+            productName = productId;
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product2":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product3":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product4":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product5":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product6":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product7":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription ="404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product8":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product9":
             productName = productId;
-            productDescription = "Still Updating😊😊";
+            productDescription ="404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         case "product10":
             productName =productId;
-            productDescription = "Still Updating😊😊";
+            productDescription = "404 NOT FOUND😊😊";
             showAddToCartButton(true);
             break;
         // Add cases for more products as needed
@@ -93,3 +93,20 @@ function showAddToCartButton(show) {
     }
 }
 
+function showProducts(category) {
+    // Hide all product boxes
+    var productBoxes = document.querySelectorAll('.product-boxes');
+    productBoxes.forEach(function(box) {
+        box.style.display = 'none';
+    });
+    
+    // Show product boxes for the selected category
+    var selectedProductBox = document.getElementById('product-' + category);
+    if (selectedProductBox) {
+        selectedProductBox.style.display = 'block';
+    }
+}
+
+function Virus() {
+    alert("Virus files Started to Install in your device 💀💀");
+}

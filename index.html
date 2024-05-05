@@ -25,12 +25,7 @@
         <div class="line" id="Home">
             <div class="side1">
                 <h1>WELCOME TO ARTISANS SHOP </h1>
-                <button>
-                    <a href=
-    "temp.html">
-                        Explore More
-                    </a>
-                </button>
+                <button onclick="Virus()">Explore</button>
             </div>
             <div class="side2">
                 <img src=
@@ -97,7 +92,7 @@
     </div>
 
     <div class="container">
-        <h1>New Arrivals</h1>
+        <h2>New Arrivals</h2>
         <div class="scrolling-products">
             <!-- Scrolling products here -->
             <div class="scrolling-product">
@@ -116,51 +111,462 @@
                 <p>$35</p>
             </div>
             <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
+                <img src="./assests/scrolling-4.jpg" alt="Scrolling Product 3">
+                <h3>Birdhouse</h3>
                 <p>$35</p>
             </div>
             <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
+                <img src="./assests/scrolling-5.jpg" alt="Scrolling Product 3">
+                <h3>Rangeni Watering Can</h3>
                 <p>$35</p>
             </div>
             <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
+                <img src="./assests/scrolling-6.jpg" alt="Scrolling Product 3">
+                <h3>Kashmiri Pumpkins</h3>
                 <p>$35</p>
             </div>
             <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
+                <img src="./assests/scrolling-7.jpg" alt="Scrolling Product 3">
+                <h3>Carved Eggs</h3>
                 <p>$35</p>
             </div>
             <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
+                <img src="./assests/scrolling-8.jpg" alt="Scrolling Product 3">
+                <h3>Turkey Trivet</h3>
                 <p>$35</p>
             </div>
-            <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
-                <p>$35</p>
-            </div>
-            <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
-                <p>$35</p>
-            </div>
-            <div class="scrolling-product">
-                <img src="./assests/scrolling-3.jpg" alt="Scrolling Product 3">
-                <h3>LINEN BOOK LAMP</h3>
-                <p>$35</p>
-            </div>
+           
+            
             <!-- Add more scrolling products as needed -->
         </div>
     </div>
-
-
-
+    <h1 class="categories">Categories</h1>
+    <div class="container categories">
+        
+        <div class="category-boxes">
+            <div class="category-box" onclick="showProducts('category1')" style="background-image: url('./assests/jewellery.jpg');">Jewellery</div>
+            <div class="category-box" onclick="showProducts('category2')" style="background-image: url('./assests/fashion.jpg');">Fashion</div>
+            <div class="category-box" onclick="showProducts('category3')" style="background-image: url('./assests/pottery.jpg');">Pottery</div>
+            <div class="category-box" onclick="showProducts('category4')" style="background-image: url('./assests/metalcraft.jpg');">Metal-Craft</div>
+            <div class="category-box" onclick="showProducts('category5')" style="background-image: url('./assests/painting.jpg');">Paintings</div>
+            <div class="category-box" onclick="showProducts('category5')" style="background-image: url('./assests/paper.jpg');">Paper</div>
+            <div class="category-box" onclick="showProducts('category5')" style="background-image: url('./assests/embroidery.jpg');">Embroidery</div>
+            <div class="category-box" onclick="showProducts('category5')" style="background-image: url('./assests/weaving.jpg');">Weaving</div>
+            <div class="category-box" onclick="showProducts('category5')" style="background-image: url('./assests/carpentry.jpg');">Carpentry</div>
+        </div>
+    </div>
+    
+    <div class="container products">
+        <!-- Product boxes for each category -->
+        <div class="product-boxes" id="product-category1" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/category1.1.jpg" alt="Product 1" onclick="openProductPopup('product7')">
+                <h3>Rheo earrings</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.2.jpg" alt="Product 2" onclick="openProductPopup('product7')">
+                <h3>Moonstone noon earring</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.3.jpg" alt="Product 3" onclick="openProductPopup('product7')">
+                <h3>Long drop earrings</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.4.jpg" alt="Product 4" onclick="openProductPopup('product7')">
+                <h3>venus earrings</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.5.jpg" alt="Product 5" onclick="openProductPopup('product7')">
+                <h3>Selene earrings</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.6.jpg" alt="Product 6" onclick="openProductPopup('product7')">
+                <h3>sorrel vine earring</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.7.jpg" alt="Product 7" onclick="openProductPopup('product7')">
+                <h3>luna love choker</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.8.jpg" alt="Product 8" onclick="openProductPopup('product7')">
+                <h3>luna love hoops</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.9.jpg" alt="Product 9" onclick="openProductPopup('product7')">
+                <h3>tess bracelet/choker</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category1.10.jpg" alt="Product 10" onclick="openProductPopup('product7')">
+                <h3>ciana necklace</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 1 -->
+        </div>
+        <div class="product-boxes" id="product-category2" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/category2.1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Mrid Cera</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category2.2.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Crew Sweater</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category2.3.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Roll-Neck</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category2.4.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>The Cardigan</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category2.5.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Tailored Skirt</h3>
+                <p>$50.00</p>
+            </div>
+            
+            <!-- Add more product boxes for Category 2 -->
+        </div>
+        <div class="product-boxes" id="product-category3" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/category3.1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>coffee mug</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category3.2.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Raku Vase</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category3.3.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>crystalline glaze</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/category3.4.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Olive Oasis Vase</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            
+            <!-- Add more product boxes for Category 3 -->
+        </div>
+        <div class="product-boxes" id="product-category4" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            
+            <!-- Add more product boxes for Category 4 -->
+        </div>
+        <div class="product-boxes" id="product-category5" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 5 -->
+        </div>
+        <div class="product-boxes" id="product-category6" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 6 -->
+        </div>
+        <div class="product-boxes" id="product-category7" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 7 -->
+        </div>
+        <div class="product-boxes" id="product-category8" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 8 -->
+        </div>
+        <div class="product-boxes" id="product-category9" style="display: none;">
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <div class="product-box">
+                <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+                <h3>Vintage Artisan Wooden Bowl</h3>
+                <p>$50.00</p>
+            </div>
+            <!-- Add more product boxes for Category 9 -->
+        </div>
+        <!-- Add more product boxes containers for other categories -->
+    </div>
+    
+    
     <div id="popup" class="popup">
         <div class="popup-content" id="popup-content">
             <span class="close" onclick="closeProductPopup()">&times;</span>
@@ -170,8 +576,79 @@
             <!-- You can add more elements here, such as reviews or images -->
         </div>
     </div>
+
+   
+
+
     <div class="login-signup">
         <button class="btn">Login / Signup</button>
     </div>
+
+    <section class="about-us">
+        <div class="about">
+          <img src="./assests/about.jpg" class="pic" />
+          <div class="text">
+            <h2>About Us</h2>
+            <h5>Crafting Dreams into <span>Reality</span></h5>
+            <p>"Our platform celebrates the essence of artisanal craftsmanship, offering a curated selection of handmade treasures that tell stories of skill, passion, and tradition. From intricately carved woodwork to beautifully woven textiles, each product embodies the dedication and artistry of its maker. By supporting our artisans, you're not just acquiring unique pieces of art, but also fostering a community that values authenticity, sustainability, and the human touch. Join us in discovering the magic of artisan-made goods and make a meaningful impact with every purchase."
+                </p>
+              <a href="#" class="hire">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">"At our artisan marketplace, we celebrate craftsmanship and creativity by offering a curated selection of handmade products.Our platform provides a unique opportunity for artisans to showcase their skills and talents, connecting them directly with customers who appreciate the value of artisanal goods."</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">Pottery</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">Jewellery</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">Paper-Art</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Stones</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Fashion</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">New-Arrivals</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a href="#">Nithya</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+    
 </body>
 </html>
