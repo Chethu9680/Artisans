@@ -179,3 +179,92 @@ nav ul li a:hover {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
+
+/* Styles for scrolling products */
+.scrolling-products {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.scrolling-product {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: scroll 10s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-product img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .line {
+        flex-direction: column; /* Stack side1 and side2 vertically */
+    }
+}
+    /* Mobile view styles */
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .scrolling-products {
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        margin-top: 20px; /* Add margin top to create space between sections */
+    }
+
+    .scrolling-product {
+        display: inline-block;
+        width: 200px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: left; /* Align the heading to the left */
+        margin-left: 20px; /* Add margin to position the heading */
+    }
+    
+    .container:nth-child(2) {
+        margin-top: 20px; /* Add margin top to create space between New Arrivals and Featured Products */
+    }
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 0; /* Adjust padding to make the navigation bar smaller */
+    }
+
+    nav ul li a {
+        padding: 5px 10px; /* Adjust padding for the navigation links */
+        font-size: 14px; /* Adjust font size for the navigation links */
+    }
+}

@@ -92,3 +92,4 @@ function showAddToCartButton(show) {
         addToCartBtn.style.display = "none";
     }
 }
+
