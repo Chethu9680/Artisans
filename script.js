@@ -56,9 +56,9 @@ function openProductPopup(productId) {
             break;
         // Add cases for more products as needed
         default:
-            productName = "I am Nithya ";
-            productDescription = "Be carefull 😂😂";
-            showAddToCartButton(false); // Hide the button
+            productName = productId;
+            productDescription = "404 NOT FOUND😊😊";
+            showAddToCartButton(true); // Hide the button
             break;
     }
 
@@ -110,3 +110,82 @@ function showProducts(category) {
 function Virus() {
     alert("Virus files Started to Install in your device 💀💀");
 }
+
+let cartItems = [];
+
+function addToCart(productName, price) {
+    cartItems.push({ productName, price });
+    updateCartCount();
+    alert(`${productName} added to cart!`);
+}
+
+function updateCartCount() {
+    const cartCountElement = document.getElementById('cart-count');
+    const cartCount = cartItems.length;
+    cartCountElement.textContent = cartCount;
+}
+
+
+function showCart() {
+    const cartContainer = document.getElementById('cart');
+    cartContainer.innerHTML = '<h2>Cart</h2>';
+
+    // Display cart items
+    if (cartItems.length === 0) {
+        cartContainer.innerHTML += '<p>Your cart is empty.</p>';
+    } else {
+        let total = 0;
+        cartItems.forEach(item => {
+            cartContainer.innerHTML += `<div class="cart-item">${item.name} - ${item.price}</div>`;
+            total += item.price;
+        });
+        cartContainer.innerHTML += `<p>Total: $${total}</p>`;
+    }
+
+    // Buy Now button
+    const buyNowBtn = document.createElement('button');
+    buyNowBtn.textContent = 'Buy Now';
+    buyNowBtn.classList.add('cart-btn');
+    buyNowBtn.addEventListener('click', () => {
+        // Add your buy now functionality here
+        alert('Redirecting to checkout page...');
+    });
+    cartContainer.appendChild(buyNowBtn);
+
+    // Clear Cart button
+    const clearCartBtn = document.createElement('button');
+    clearCartBtn.textContent = 'Clear Cart';
+    clearCartBtn.classList.add('cart-btn');
+    clearCartBtn.style.backgroundColor = '#dc3545';
+    clearCartBtn.addEventListener('click', () => {
+        cartItems = []; // Clear cart
+        updateCartCount();
+        showCart(); // Refresh cart display
+        alert('Cart cleared.');
+    });
+    cartContainer.appendChild(clearCartBtn);
+
+    // Close button
+    const closeBtn = document.createElement('span');
+    closeBtn.classList.add('cart-close-btn');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.addEventListener('click', () => {
+        cartContainer.style.display = 'none';
+    });
+    cartContainer.appendChild(closeBtn);
+
+    cartContainer.style.display = 'block';
+}
+
+
+
+
+// Add event listener to product popup "Add to Cart" button
+const popupAddToCartButton = document.getElementById('add-to-cart-btn');
+popupAddToCartButton.addEventListener('click', () => {
+    const productName = document.getElementById('popup-product-name').textContent;
+    const productPrice = parseFloat(document.getElementById('popup-product-price').textContent.slice(1)); // Remove $ sign and convert to float
+    addToCart(productName, productPrice);
+});
+
+

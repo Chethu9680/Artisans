@@ -37,33 +37,33 @@
         <h2>Featured Products</h2>
 
         <div class="product-box">
-            <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('product1')">
+            <img src="./assests/product1.jpg" alt="Product 1" onclick="openProductPopup('Vintage Artisan Wooden Bowl')">
             <h3>Vintage Artisan Wooden Bowl</h3>
             <p>$50.00</p>
         </div>
 
         <div class="product-box">
-            <img src="./assests/product2.jpg" alt="Product 2" onclick="openProductPopup('product2')">
+            <img src="./assests/product2.jpg" alt="Product 2" onclick="openProductPopup('Moroccan POUF')">
             <h3>Moroccan POUF</h3>
             <p>$50.00</p>
         </div>
         <div class="product-box">
-            <img src="./assests/product3.jpg" alt="Product 3" onclick="openProductPopup('product3')">
+            <img src="./assests/product3.jpg" alt="Product 3" onclick="openProductPopup('Vintage Artisan Wooden Bowl')">
             <h3>Vintage Artisan Wooden Bowl</h3>
             <p>$50.00</p>
         </div>
         <div class="product-box">
-            <img src="./assests/product4.jpg" alt="Product 4" onclick="openProductPopup('product4')">
+            <img src="./assests/product4.jpg" alt="Product 4" onclick="openProductPopup('Colored Murano glass')">
             <h3>Colored Murano glass</h3>
             <p>$50.00</p>
         </div>
         <div class="product-box">
-            <img src="./assests/product5.jpg" alt="Product 5" onclick="openProductPopup('product5')">
+            <img src="./assests/product5.jpg" alt="Product 5" onclick="openProductPopup('Vintage Artisan Wooden Bowl')">
             <h3>Vintage Artisan Wooden Bowl</h3>
             <p>$50.00</p>
         </div>
         <div class="product-box">
-            <img src="./assests/product6.jpg" alt="Product 6" onclick="openProductPopup('product6')">
+            <img src="./assests/product6.jpg" alt="Product 6" onclick="openProductPopup('Indian Artisan Paper Mache Vase')">
             <h3>Indian Artisan Paper Mache Vase</h3>
             <p>$50.00</p>
         </div>
@@ -581,7 +581,17 @@
 
 
     <div class="login-signup">
-        <button class="btn">Login / Signup</button>
+        <a href="login.html"><button class="btn" onclick="">Login/ Signup</button></a>
+    </div>
+    
+
+    <button id="main-cart-btn" class="cart-btn" onclick="showCart()">
+        <img src="cart-icon.png" alt="Cart Icon">
+        <span id="cart-count" class="cart-count">0</span>
+    </button>
+
+    <div id="cart" class="cart-container">
+        <!-- Cart items will be displayed here -->
     </div>
 
     <section class="about-us">
